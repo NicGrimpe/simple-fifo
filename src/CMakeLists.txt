@@ -1,0 +1,1 @@
+target_sources(C_Queue PRIVATE queue.c)
