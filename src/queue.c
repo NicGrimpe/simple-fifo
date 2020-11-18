@@ -42,9 +42,11 @@ void enqueue(char element)
 char dequeue()
 {
     if (head->next != NULL) {
+        struct Node* node = head;
         char element = head->value;
         head = head->next;
 
+        free(node);
         return element;
     } else {
         return (char) 0xFF;
